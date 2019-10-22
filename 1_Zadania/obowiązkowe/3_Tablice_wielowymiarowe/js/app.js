@@ -1,4 +1,4 @@
-
+//zadanie 0
 var task1Array = [
     [2, 3],
     ["Ala", "Ola"],
