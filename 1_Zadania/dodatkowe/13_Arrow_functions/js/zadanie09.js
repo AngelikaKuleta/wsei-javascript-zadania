@@ -1,10 +1,2 @@
-const dog = {
-    type: "Mammal",
-    name: "",
-    setName: (newName) => {
-        this.name = newName;
-    }
-}
-
-dog.setName("Reksio");
-console.log(dog.name);
+$("div > span").mouseover((e) => 
+    e.currentTarget.nextElementSibling.style.display = "block");

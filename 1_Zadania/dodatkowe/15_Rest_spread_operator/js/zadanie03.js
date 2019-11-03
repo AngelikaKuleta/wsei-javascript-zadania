@@ -16,3 +16,5 @@ let people = [
         profession: "trener"
     }
 ];
+
+export {people};

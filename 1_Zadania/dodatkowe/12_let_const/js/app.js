@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-
+    //zadanie 0
     const x = 5;
     let y = 3;
 
@@ -26,4 +26,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     console.log(z, y);
+
+    //zadanie 3
+    for (var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+    console.log(i); //10
+
+    for (let j = 0; j < 10; j++) {
+        console.log(j);
+    }
+    //console.log(j); //j is not defined
+
+    //zadanie 5
+    (function() { 
+        console.log("helo world"); 
+    })();
+
+    //zadanie 6
+    (function (name) { 
+        console.log(name); 
+    })("Janusz");
 })
