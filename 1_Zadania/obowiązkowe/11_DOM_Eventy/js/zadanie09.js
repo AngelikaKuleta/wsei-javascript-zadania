@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 })
+
+// w celu odwołania się do elementu b wykorzystuję event object:
+// function innerFuncOne(e) {
+//   console.log("innerFuncOne: ", e.currentTarget);
+// }
+// innerFuncOne(event);
+
+// lub metodę bind:
+// innerFuncOne.bind(this)();

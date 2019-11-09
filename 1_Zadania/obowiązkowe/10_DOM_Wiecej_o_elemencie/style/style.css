@@ -54,3 +54,7 @@
 .ex5 .big {
     font-size: 24px;
 }
+
+.ex5 a {
+    text-decoration: none;
+}

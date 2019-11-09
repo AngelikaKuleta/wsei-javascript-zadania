@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//tworzymy funkcję jeden()
 function jeden() {
 
-    //Twoj komentarz ...
+    //wewnątrz funkcji jeden tworzymy zmienną zmienna1 o zasięgu funkcyjnym
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //tworzymy funkcję dwa() zagnieżdżoną w funkcji jeden()
     function dwa() {
 
-        //Twoj komentarz ...
+        //zmienna1 zdeklarowana bezpośrednio w funkcji jeden() widoczna jest wszędzie wewnatrz tej funkcji, również w funkcjach zagnieżdżonych
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //tworzymy zmienną zmienna2 która jest widoczna tylko wewnątrz funkcji dwa()
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołujemy zdefiniowaną wcześniej funkcję dwa(), która ma dostęp do zmiennej 1
     dwa();
 
-    //Twoj komentarz ...
+    //zmienna2 nie jest widoczna na zewnatrz funkcji dwa()
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołujemy funkcję jeden(), która wywołuję funkcję dwa() i próbuje wypisać zmienną zmienna2
 jeden()

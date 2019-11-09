@@ -4,7 +4,7 @@ var Robot = function (name) {
 }
 
 Robot.prototype.sayHi = function (toWho) {
-    if (isFunctional === true) {
+    if (this.isFunctional === true) { //dodano this
         console.log("Robot " + this.name + " greets " + toWho);
     }
     else {
@@ -13,11 +13,22 @@ Robot.prototype.sayHi = function (toWho) {
 };
 
 Robot.prototype.changeName = function (newname) {
-    console.log("Robot " + this.name + "changes name to " + newname);
+    console.log("Robot " + this.name + " changes name to " + newname); //dodano spację
     name = newname;
 };
 
 Robot.prototype.fixIt = function () {
     this.isFunctional = true;
-    console.log("Robot " + this.name + "was fixed");
+    console.log("Robot " + this.name + " was fixed"); //dodano spację
 };
+
+Robot.prototype.break = function () {
+    this.isFunctional = false;
+    console.log("Robot " + this.name + " was broken");
+}
+
+var robo = new Robot("Robo");
+robo.sayHi("me");
+robo.changeName("RoboCop");
+robo.break();
+robo.fixIt();
